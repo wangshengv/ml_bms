@@ -33,8 +33,6 @@ public class WarningMessageConsumer {
         private void handleCriticalWarning(WarningMessageProducer.WarningMessage warning) {
             log.error("紧急预警处理: 车辆{}, 规则{}, 等级{}",
                     warning.getVid(), warning.getRuleName(), warning.getWarningLevel());
-            // 这里可以添加紧急预警的特殊处理逻辑
-            // 例如：发送短信、邮件、推送等
         }
     }
 
